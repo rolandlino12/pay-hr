@@ -56,6 +56,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          tauriScript: npx tauri
           tagName: v__VERSION__
           releaseName: 'Paie HR v__VERSION__'
           releaseBody: 'Download the installer for your platform below.'
